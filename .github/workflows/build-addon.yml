@@ -1,0 +1,26 @@
+name: Build Addon ZIP
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare addon folder
+        run: |
+          ADDON_NAME="RepuTracker"
+          mkdir -p "build/$ADDON_NAME"
+
+          cp RepuTracker.toc Core.lua Data.lua UI.lua README.md \
+             "build/$ADDON_NAME/"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: RepuTracker
+          path: build/RepuTracker
