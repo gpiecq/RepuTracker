@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"C:\\\\Users\\\\ForzaPC\\\\Documents\\\\RepuTracker\" remote -v)",
+      "Bash(git -C \"C:\\\\Users\\\\ForzaPC\\\\Documents\\\\RepuTracker\" add README.md)",
+      "Bash(git -C \"C:\\\\Users\\\\ForzaPC\\\\Documents\\\\RepuTracker\" commit -m \"$\\(cat <<''EOF''\nAdd project README\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git -C \"C:\\\\Users\\\\ForzaPC\\\\Documents\\\\RepuTracker\" push -u origin main)",
+      "Bash(git -C \"C:\\\\Users\\\\ForzaPC\\\\Documents\\\\RepuTracker\" checkout -b develop)",
+      "Bash(git -C \"C:\\\\Users\\\\ForzaPC\\\\Documents\\\\RepuTracker\" push -u origin develop)",
+      "Bash(gh repo view:*)",
+      "Bash(ls:*)"
+    ]
+  }
+}

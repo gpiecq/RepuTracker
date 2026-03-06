@@ -1,0 +1,10 @@
+## Interface: 20505
+## Title: RepuTracker
+## Notes: Track reputations across all characters on the account.
+## Author: RepuTracker Team
+## Version: 1.0.0
+## SavedVariables: RepuTrackerDB
+
+Core.lua
+Data.lua
+UI.lua
